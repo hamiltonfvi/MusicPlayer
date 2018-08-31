@@ -43,10 +43,10 @@ public class MainActivity extends AppCompatActivity {
                     public void onCompletion(MediaPlayer mp) {
                         Toast.makeText(getApplicationContext(), getString(R.string.ended), Toast.LENGTH_SHORT).show();
 
-                        //Disable Pause Button after reproduction of the audio is finished
+                        //Disable Pause Button after reproduction of the audio has finished
                         pausebutton.setEnabled(false);
 
-                        //Enable Play Button after reproduction of the audio is finished
+                        //Enable Play Button after reproduction of the audio has finished
                         playbutton.setEnabled(true);
                     }
                 });
